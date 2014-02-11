@@ -39,13 +39,7 @@ public class NotificationService extends Service {
             @Override
             public void run() {
                 // 开始执行后台任务
-                try {
-                    Thread.sleep(5000);
-                    showNotification();
-                } catch (InterruptedException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
+                showNotification();
             }
         }, "test").start();
 
